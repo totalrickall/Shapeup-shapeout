@@ -13,7 +13,68 @@
 
 <body>
   <!--Content Here-->
-
+  <div class='wrapper'>
+    <div class='contain'>
+      <div id=infoBar>
+        <h3>Shape Measurement(s)</h3>
+        <div class='control'>
+          <label for="rectangle">Rectangle: </label>
+          <input type="number" id="rectangleW" placeholder="Width">
+          <input type="number" id="rectangleH" placeholder="Height">
+          <button id='rectangle-button'>Add Shape</button>
+        </div>
+        <div class='control'>
+          <label for="square">Square: </label>
+          <input id="square" type='number' placeholder="side length">
+          <button id='square-button'>Add Shape</button>
+        </div>
+        <div class='control'>
+          <label for="circle">Circle: </label>
+          <input type="number" id="circle" placeholder="radius">
+          <button id='circle-button'>Add Shape</button>
+        </div>
+        <div class='control'>
+          <label for="triangle">Triangle: </label>
+          <input type="number" id="triangle" placeholder="height">
+          <button id='triangle-button'>Add Shape</button>
+        </div>
+        <hr>
+        <h3>Shape Properties: </h3>
+        <div class='control'>
+          <h4>Shape Name:
+            <span id="name"></span>
+          </h4>
+        </div>
+        <div class='control'>
+          <h4>Width:
+            <span id="width"></span>
+          </h4>
+        </div>
+        <div class='control'>
+          <h4>Height:
+            <span id="height"></span>
+          </h4>
+        </div>
+        <div class='control'>
+          <h4>Radius:
+            <span id="radius"></span>
+          </h4>
+        </div>
+        <div class='control'>
+          <h4>Area:
+            <span id="area"></span>
+          </h4>
+        </div>
+        <div class='control'>
+          <h4>Perimeter:
+            <span id="perimeter"></span>
+          </h4>
+        </div>
+      </div>
+      <div id="pad">
+      </div>
+    </div>
+  </div>
   <!--Dependencies-->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
